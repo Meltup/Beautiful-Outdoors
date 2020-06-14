@@ -4,26 +4,92 @@
 
 <!-- ========== Patching ThingDefs_Plants/Plants_Bases ========== -->
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[@Name="PlantBase"]/statBases</xpath>
-        <value>
-            <Beauty>1</Beauty>
-        </value>
-    </Operation>
-    
-	<Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[@Name="TreeBase"]/statBases</xpath>
-        <value>
-            <Beauty>2</Beauty>
-        </value>
-    </Operation>
+    <Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[@Name="PlantBaseNonEdible"]/statBases</xpath>
+				<match Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[@Name="PlantBaseNonEdible"]/statBases/Beauty</xpath>
+					<match Class="PatchOperationReplace">
+					    <xpath>/Defs/ThingDef[@Name="PlantBaseNonEdible"]/statBases/Beauty/text()</xpath>
+                        <value>1</value>
+				    </match>
+					<nomatch Class="PatchOperationAdd">
+					    <xpath>/Defs/ThingDef[@Name="PlantBaseNonEdible"]/statBases</xpath>
+                        <value>
+			      		    <Beauty>1</Beauty>
+						</value>
+				    </nomatch>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="PlantBaseNonEdible"]</xpath>
+					<value>
+                        <statBases>
+     					    <Beauty>1</Beauty>
+			            </statBases>
+                    </value>
+			    </nomatch>
+			</li>
+		</operations>
+	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[@Name="HealrootBase"]/statBases</xpath>
-        <value>
-			<Beauty>2</Beauty>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[@Name="TreeBase"]/statBases</xpath>
+				<match Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[@Name="TreeBase"]/statBases/Beauty</xpath>
+					<match Class="PatchOperationReplace">
+					    <xpath>/Defs/ThingDef[@Name="TreeBase"]/statBases/Beauty/text()</xpath>
+                        <value>2</value>
+				    </match>
+					<nomatch Class="PatchOperationAdd">
+					    <xpath>/Defs/ThingDef[@Name="TreeBase"]/statBases</xpath>
+                        <value>
+			      		    <Beauty>2</Beauty>
+						</value>
+				    </nomatch>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="TreeBase"]</xpath>
+					<value>
+                        <statBases>
+     					    <Beauty>2</Beauty>
+			            </statBases>
+                    </value>
+			    </nomatch>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[@Name="HealrootBase"]/statBases</xpath>
+				<match Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[@Name="HealrootBase"]/statBases/Beauty</xpath>
+					<match Class="PatchOperationReplace">
+					    <xpath>/Defs/ThingDef[@Name="HealrootBase"]/statBases/Beauty/text()</xpath>
+                        <value>2</value>
+				    </match>
+					<nomatch Class="PatchOperationAdd">
+					    <xpath>/Defs/ThingDef[@Name="HealrootBase"]/statBases</xpath>
+                        <value>
+			      		    <Beauty>2</Beauty>
+						</value>
+				    </nomatch>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="HealrootBase"]</xpath>
+					<value>
+                        <statBases>
+     					    <Beauty>2</Beauty>
+			            </statBases>
+                    </value>
+			    </nomatch>
+			</li>
+		</operations>
+	</Operation>
 	
     <!-- ========== Patching individual plants. Yes, one by one ========== -->
 	<!-- ========== Patching Plants_Cave ========== -->
