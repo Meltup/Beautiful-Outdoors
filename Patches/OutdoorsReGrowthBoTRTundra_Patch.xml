@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>ReGrowth: Biomes of The Rim - Tundra Expansion</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+		    
+			<li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="RG-T_Plant_LupineIceland"]/statBases/Beauty/text()</xpath>
+                <value>9</value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="RG-T_Plant_TundraCotton"]/statBases/Beauty/text()</xpath>
+                <value>7</value>
+            </li>	
+			<li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="RG-T_Plant_YellowTreePine"]/statBases/Beauty/text()</xpath>
+                <value>5</value>
+            </li>
+			
+        </operations>
+    </match>
+    </Operation>
+</Patch>
