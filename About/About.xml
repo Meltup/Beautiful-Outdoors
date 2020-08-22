@@ -4,6 +4,7 @@
 	<author>Meltup</author>
 	<supportedVersions>
 	    <li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	
 	<packageId>Meltup.BeautifulOutdoors</packageId>
@@ -15,7 +16,7 @@ Simple mod that adjusts beauty and ugly modifiers for terrain and flora. Most no
 - flowers are significantly more beautiful now;
 - most trees have beauty increased to 2-4 range. Oak and Teak trees have 5 beauty;
 - grass and most bush plants have 1 beauty. Berry plants and healroot have 2 beauty;
-- water has overall beauty increased to 4 with ocean cost line having beauty of 24;
+- water has overall beauty increased to 4 with ocean cost line having beauty of 6;
 - soil, sand and ice get neutral beauty, rich soil gets 1 beauty;
 - mud and marsh are really dislikable for the pawns now (-4 and -6 beauty);
 - rafflesia is adjusted to -12 beauty to correspond its description;

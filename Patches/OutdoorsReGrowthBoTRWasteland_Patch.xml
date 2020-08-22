@@ -4,7 +4,7 @@
 
     <Operation Class="PatchOperationFindMod">
     <mods>
-        <li>ReGrowth: Biomes of The Rim - Wasteland</li>
+        <li>ReGrowth - Wasteland</li>
     </mods>
     <match Class="PatchOperationSequence">
         <success>Always</success>

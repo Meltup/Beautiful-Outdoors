@@ -10,7 +10,7 @@
 			
 			    <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/statBases/Beauty/text()</xpath>
-                    <value>8</value>
+                    <value>12</value>
                 </li>
             	
 		    	<li Class="PatchOperationConditional">

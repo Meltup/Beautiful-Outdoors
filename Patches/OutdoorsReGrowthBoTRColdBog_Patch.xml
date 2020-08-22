@@ -4,14 +4,14 @@
 
     <Operation Class="PatchOperationFindMod">
     <mods>
-        <li>ReGrowth - Boreal Expansion</li>
+        <li>ReGrowth - Cold Bog Expansion</li>
     </mods>
     <match Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
 		    			
 			<li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef[defName="RG-B_Potokus"]/statBases/Beauty/text()</xpath>
+                <xpath>/Defs/ThingDef[defName="RG-CB_Volopus"]/statBases/Beauty/text()</xpath>
                 <value>3</value>
             </li>	
 			
