@@ -180,22 +180,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Bryolux"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Bryolux"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Bryolux"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Bryolux"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Bryolux"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Bryolux"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>2</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Bryolux"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Bryolux"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>2</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Bryolux"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Bryolux"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>2</BeautyOutdoors>
@@ -205,6 +205,8 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	
 
     <!-- ========== Patching Plants_Cultivated_Decorative ========== -->
 	
@@ -233,22 +235,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases/Beauty</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases/Beauty</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases/Beauty/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases/Beauty/text()</xpath>
                         <value>2</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases</xpath>
                         <value>
 			      		    <Beauty>2</Beauty>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
 					<value>
                         <statBases>
      					    <Beauty>2</Beauty>
@@ -262,22 +264,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>2</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>2</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_Strawberry"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>2</BeautyOutdoors>
@@ -303,22 +305,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases/Beauty</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases/Beauty</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases/Beauty/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases/Beauty/text()</xpath>
                         <value>2</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases</xpath>
                         <value>
 			      		    <Beauty>2</Beauty>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]</xpath>
 					<value>
                         <statBases>
      					    <Beauty>2</Beauty>
@@ -332,22 +334,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>2</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>2</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_Ambrosia"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Ambrosia"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>2</BeautyOutdoors>
@@ -363,22 +365,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases/Beauty</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases/Beauty</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases/Beauty/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases/Beauty/text()</xpath>
                         <value>3</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases</xpath>
                         <value>
 			      		    <Beauty>3</Beauty>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]</xpath>
 					<value>
                         <statBases>
      					    <Beauty>3</Beauty>
@@ -392,22 +394,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>3</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>3</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeDrago"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>3</BeautyOutdoors>
@@ -438,22 +440,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_TreeCypress"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeCypress"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeCypress"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>3</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeCypress"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>3</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeCypress"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>3</BeautyOutdoors>
@@ -499,22 +501,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases/Beauty</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases/Beauty</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases/Beauty/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases/Beauty/text()</xpath>
                         <value>2</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases</xpath>
                         <value>
 			      		    <Beauty>2</Beauty>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_Berry"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Berry"]</xpath>
 					<value>
                         <statBases>
      					    <Beauty>2</Beauty>
@@ -528,22 +530,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>2</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_Berry"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_Berry"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>2</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_Berry"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Berry"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>2</BeautyOutdoors>
@@ -572,22 +574,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_TreePoplar"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_TreePoplar"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreePoplar"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreePoplar"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreePoplar"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreePoplar"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>3</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreePoplar"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreePoplar"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>3</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreePoplar"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreePoplar"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>3</BeautyOutdoors>
@@ -658,22 +660,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_TreeCecropia"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_TreeCecropia"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeCecropia"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeCecropia"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeCecropia"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeCecropia"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>3</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreeCecropia"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreeCecropia"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>3</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreeCecropia"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreeCecropia"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>3</BeautyOutdoors>
@@ -692,22 +694,22 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="Plant_TreePalm"]/statBases</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_TreePalm"]/statBases</xpath>
 				<match Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreePalm"]/statBases/BeautyOutdoors</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreePalm"]/statBases/BeautyOutdoors</xpath>
 					<match Class="PatchOperationReplace">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreePalm"]/statBases/BeautyOutdoors/text()</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreePalm"]/statBases/BeautyOutdoors/text()</xpath>
                         <value>3</value>
 				    </match>
 					<nomatch Class="PatchOperationAdd">
-					    <xpath>/Defs/ThingDef[@Name="Plant_TreePalm"]/statBases</xpath>
+					    <xpath>/Defs/ThingDef[defName="Plant_TreePalm"]/statBases</xpath>
                         <value>
 			      		    <BeautyOutdoors>3</BeautyOutdoors>
 						</value>
 				    </nomatch>
 				</match>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="Plant_TreePalm"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_TreePalm"]</xpath>
 					<value>
                         <statBases>
      					    <BeautyOutdoors>3</BeautyOutdoors>
@@ -718,7 +720,7 @@
 		</operations>
 	</Operation>
 
-<!-- ========== Patching ThingDefs/Terrain_Natural ========== -- All natural terrain beauty is now -3 inside and neutral outside -->
+<!-- ========== Patching ThingDefs/Terrain_Natural ========== -->
 
     <Operation Class="PatchOperationReplace">
       <xpath>/Defs/TerrainDef[defName="Soil"]/statBases/Beauty/text()</xpath>
