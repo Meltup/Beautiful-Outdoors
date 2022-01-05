@@ -4,7 +4,7 @@
 
     <Operation Class="PatchOperationFindMod">
     <mods>
-        <li>[HLX] ReGrowth - Temperate Forest Expansion</li>
+        <li>ReGrowth: Temperate Forest Expansion</li>
     </mods>
     <match Class="PatchOperationSequence">
         <success>Always</success>

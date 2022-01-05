@@ -7,12 +7,14 @@
         <match Class="PatchOperationSequence">
 		<success>Always</success>
 		    <operations>
-			
 			    <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/statBases/Beauty/text()</xpath>
                     <value>12</value>
                 </li>
-            	
+			    <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/statBases/BeautyOutdoors/text()</xpath>
+                    <value>12</value>
+                </li>
 		    	<li Class="PatchOperationConditional">
 		    		<xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]/statBases</xpath>
 		    		<match Class="PatchOperationConditional">
@@ -36,8 +38,31 @@
 		    	            </statBases>
                         </value>
 		    	    </nomatch>
-		    	</li>                
-	
+		    	</li>       
+		    	<li Class="PatchOperationConditional">
+		    		<xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]/statBases</xpath>
+		    		<match Class="PatchOperationConditional">
+		    			<xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]/statBases/BeautyOutdoors</xpath>
+		    			<match Class="PatchOperationReplace">
+		    			    <xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]/statBases/BeautyOutdoors/text()</xpath>
+                            <value>2</value>
+		    		    </match>
+		    			<nomatch Class="PatchOperationAdd">
+		    			    <xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]/statBases</xpath>
+                            <value>
+		    	      		    <BeautyOutdoors>2</BeautyOutdoors>
+		    				</value>
+		    		    </nomatch>
+		    		</match>
+		    		<nomatch Class="PatchOperationAdd">
+		    			<xpath>/Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
+		    			<value>
+                            <statBases>
+     	    				    <BeautyOutdoors>2</BeautyOutdoors>
+		    	            </statBases>
+                        </value>
+		    	    </nomatch>
+		    	</li>    
 	        </operations>
         </match>
     </Operation>

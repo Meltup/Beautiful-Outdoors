@@ -4,7 +4,7 @@
 
     <Operation Class="PatchOperationFindMod">
     <mods>
-        <li>[HLX] ReGrowth - Cold Bog Expansion</li>
+        <li>ReGrowth: Cold Bog Expansion</li>
     </mods>
     <match Class="PatchOperationSequence">
         <success>Always</success>
