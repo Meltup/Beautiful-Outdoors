@@ -724,6 +724,10 @@
 
     <Operation Class="PatchOperationReplace">
       <xpath>/Defs/TerrainDef[defName="Soil"]/statBases/Beauty/text()</xpath>
+        <value>-1</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="Soil"]/statBases/BeautyOutdoors/text()</xpath>
         <value>0</value>
     </Operation>
 
@@ -731,19 +735,36 @@
       <xpath>/Defs/TerrainDef[defName="MossyTerrain"]/statBases/Beauty/text()</xpath>
         <value>-1</value>
     </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="MossyTerrain"]/statBases/BeautyOutdoors/text()</xpath>
+        <value>0</value>
+    </Operation>
 
     <Operation Class="PatchOperationReplace">
       <xpath>/Defs/TerrainDef[defName="MarshyTerrain"]/statBases/Beauty/text()</xpath>
-        <value>-2</value>
+        <value>-3</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="MarshyTerrain"]/statBases/Beauty/text()</xpath>
+        <value>-1</value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
       <xpath>/Defs/TerrainDef[defName="SoilRich"]/statBases/Beauty/text()</xpath>
         <value>0</value>
     </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="SoilRich"]/statBases/BeautyOutdoors/text()</xpath>
+        <value>1</value>
+    </Operation>
+	
 	
 	<Operation Class="PatchOperationReplace">
       <xpath>/Defs/TerrainDef[defName="Gravel"]/statBases/Beauty/text()</xpath>
+        <value>-1</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="Gravel"]/statBases/BeautyOutdoors/text()</xpath>
         <value>0</value>
     </Operation>
 
@@ -751,9 +772,17 @@
       <xpath>/Defs/TerrainDef[defName="Sand"]/statBases/Beauty/text()</xpath>
         <value>0</value>
     </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="Sand"]/statBases/BeautyOutdoors/text()</xpath>
+        <value>0</value>
+    </Operation>
 
     <Operation Class="PatchOperationReplace">
       <xpath>/Defs/TerrainDef[defName="SoftSand"]/statBases/Beauty/text()</xpath>
+        <value>0</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="SoftSand"]/statBases/BeautyOutdoors/text()</xpath>
         <value>0</value>
     </Operation>
 
@@ -761,9 +790,17 @@
       <xpath>/Defs/TerrainDef[defName="Mud"]/statBases/Beauty/text()</xpath>
         <value>-4</value>
     </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="Mud"]/statBases/BeautyOutdoors/text()</xpath>
+        <value>-2</value>
+    </Operation>
 
     <Operation Class="PatchOperationReplace">
       <xpath>/Defs/TerrainDef[defName="Ice"]/statBases/Beauty/text()</xpath>
+        <value>0</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="Ice"]/statBases/BeautyOutdoors/text()</xpath>
         <value>0</value>
     </Operation>
 
@@ -947,14 +984,22 @@
       <xpath>/Defs/TerrainDef[defName="Marsh"]/statBases/Beauty/text()</xpath>
         <value>-6</value>
     </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/TerrainDef[defName="Marsh"]/statBases/BeautyOutdoors/text()</xpath>
+        <value>-4</value>
+    </Operation>
 
 
-<!-- ========== Patching ThingDefs_Plants/Various_Stone ========== -->
+<!-- ========== Patching ThingDefs_Misc/Various_Stone ========== -->
 
-    <!--Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[@Name="ChunkBase"]/statBases/Beauty/text()</xpath>
-        <value>-1</value>
-    </Operation!-->
+        <value>-4</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[@Name="StoneBlocksBase"]/statBases/Beauty/text()</xpath>
+        <value>-6</value>
+    </Operation>
 
 
 </Patch>
