@@ -21,7 +21,7 @@ Simple mod that adjusts beauty and ugly modifiers for terrain and flora. Most no
 - soil, sand and ice get neutral beauty, rich soil gets 1 beauty;
 - mud and marsh are really dislikable for the pawns now (-4 and -6 beauty);
 - rafflesia is adjusted to -12 beauty to correspond its description;
-- rock chunks are more tolerable with -1 beauty (against -8 in Vanilla. Ouch!).
+- chunks and stone blocks are more tolerable with -4 and -6 beauty (against -8 and -12 in Vanilla. Ouch!).
 
 </description>
 </ModMetaData>
