@@ -1,0 +1,41 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+		<success>Always</success>
+		    <operations>
+			    <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_TreeBonsai"]/statBases/Beauty/text()</xpath>
+                    <value>25</value>
+                </li>
+			    <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_TreeBonsai"]/statBases/BeautyOutdoors/text()</xpath>
+                    <value>25</value>
+                </li>
+				
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/statBases/Beauty/text()</xpath>
+                    <value>10</value>
+                </li>
+			    <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/statBases/BeautyOutdoors/text()</xpath>
+                    <value>10</value>
+                </li>
+				
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_MossGauranlen"]/statBases/Beauty/text()</xpath>
+                    <value>14</value>
+                </li>
+			    <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_MossGauranlen"]/statBases/BeautyOutdoors/text()</xpath>
+                    <value>14</value>
+                </li>
+		    	    
+	        </operations>
+        </match>
+    </Operation>
+	
+</Patch>

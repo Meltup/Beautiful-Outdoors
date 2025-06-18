@@ -1,0 +1,22 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Anomaly</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+		<success>Always</success>
+		    <operations>
+			    <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_TreeHarbinger"]/statBases/Beauty/text()</xpath>
+                    <value>-18</value>
+                </li>
+			    <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Plant_TreeHarbinger"]/statBases/BeautyOutdoors/text()</xpath>
+                    <value>-18</value>
+                </li>
+	        </operations>
+        </match>
+    </Operation>
+	
+</Patch>
