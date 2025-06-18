@@ -745,7 +745,7 @@
         <value>-3</value>
     </Operation>
 	<Operation Class="PatchOperationReplace">
-      <xpath>/Defs/TerrainDef[defName="MarshyTerrain"]/statBases/Beauty/text()</xpath>
+      <xpath>/Defs/TerrainDef[defName="MarshyTerrain"]/statBases/BeautyOutdoors/text()</xpath>
         <value>-1</value>
     </Operation>
 
